@@ -56,6 +56,9 @@ app.post("/api/contacto", (req, res) => {
   res.json({ message: "Mensaje recibido correctamente" });
 });
 console.log("SERVER NATARY ACTUAL");
-app.listen(4000, ()=>{
-    console.log("Servidor Express en puerto 4000");
+
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, ()=>{
+console.log(`Servidor Express en puerto ${PORT}`);
 });
