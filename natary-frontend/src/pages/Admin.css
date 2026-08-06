@@ -1,0 +1,113 @@
+.admin-page {
+  background: #f8e1eb;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: #c2185b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #a3154a;
+}
+
+/* FORM */
+.admin-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.admin-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.admin-form button {
+  background: #c2185b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* GRID PRODUCTOS */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card-producto {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.card-producto:hover {
+  transform: scale(1.02);
+}
+
+.card-producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+}
+
+.info {
+  padding: 15px;
+}
+
+.info input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-delete {
+  margin-top: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: darkred;
+}
