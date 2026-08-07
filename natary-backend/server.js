@@ -13,7 +13,7 @@ const contactoRoutes = require("./routes/contacto");
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://crochetnatary.up.railway.app",
     credentials: true
 }));
 
