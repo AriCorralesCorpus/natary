@@ -34,7 +34,7 @@ function NuevoProducto(){
 
 const token = localStorage.getItem("token");
            const respuesta = await fetch(
-    "http://localhost:4000/api/productos",
+    "https://natary-production.up.railway.app/api/productos",
     {
         method: "POST",
         headers: {

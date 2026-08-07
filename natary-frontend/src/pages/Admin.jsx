@@ -8,7 +8,7 @@ function Admin() {
 
   const cargarProductos = async () => {
     const token = localStorage.getItem("token");
-    const res = await fetch("http://localhost:4000/api/productos", {
+    const res = await fetch("https://natary-production.up.railway.app/api/productos", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -35,7 +35,7 @@ function Admin() {
     const formData = new FormData(e.target);
 
     const token = localStorage.getItem("token");
-    const res = await fetch("http://localhost:4000/api/productos", {
+    const res = await fetch("https://natary-production.up.railway.app/api/productos", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`
@@ -57,7 +57,7 @@ function Admin() {
   // STOCK
   const actualizarStock = async (id, stock) => {
     const token = localStorage.getItem("token");
-    await fetch(`http://localhost:4000/api/productos/stock/${id}`, {
+    await fetch(`https://natary-production.up.railway.app/api/productos/stock/${id}`, {
       method: "PUT",
       headers: { 
         "Content-Type": "application/json" ,
@@ -73,7 +73,7 @@ function Admin() {
   const eliminar = async (id) => {
     if (!window.confirm("¿Eliminar producto?")) return;
 const token = localStorage.getItem("token");
-    await fetch(`http://localhost:4000/api/productos/${id}`, {
+    await fetch(`https://natary-production.up.railway.app/api/productos/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`
@@ -116,7 +116,7 @@ const token = localStorage.getItem("token");
           <div className="card-producto" key={p.cve_pro}>
 
             <img
-              src={`http://localhost:4000/uploads/${p.img_pro}`}
+              src={`https://natary-production.up.railway.app/uploads/${p.img_pro}`}
               alt={p.nombre_pro}
             />
 

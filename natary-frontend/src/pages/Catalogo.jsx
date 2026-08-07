@@ -23,7 +23,7 @@ function Catalogo() {
     }
 
     useEffect(() => {
-        axios.get("http://localhost:4000/api/productos")
+        axios.get("https://natary-production.up.railway.app/api/productos")
             .then(res => {
                 setProductos(res.data);
             })
@@ -42,7 +42,7 @@ function Catalogo() {
 
         const token = localStorage.getItem("token");
 
-        const respuesta = await fetch("http://localhost:4000/api/carrito", {
+        const respuesta = await fetch("https://natary-production.up.railway.app/api/carrito", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -124,7 +124,7 @@ function Catalogo() {
                                 >
 
                                     <img
-                                        src={"http://localhost:4000/uploads/" + p.img_pro}
+                                        src={"https://natary-production.up.railway.app/uploads/" + p.img_pro}
                                         className="card-img-top"
                                         height="200"
                                     />

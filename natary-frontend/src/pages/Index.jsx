@@ -36,7 +36,7 @@ const agregarAlCarrito = async (producto) => {
     return;
   }
 
-  const res = await fetch("http://localhost:4000/api/carrito", {
+  const res = await fetch("https://natary-production.up.railway.app/api/carrito", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -61,7 +61,7 @@ const agregarAlCarrito = async (producto) => {
 
 useEffect(() => {
 
-    fetch("http://localhost:4000/api/productos")
+    fetch("https://natary-production.up.railway.app/api/productos")
     .then(res => res.json())
     .then(data => {
         setProductos(data);
@@ -285,7 +285,7 @@ key={producto.cve_pro}
 
 <img
   loading="lazy"
-  src={`http://localhost:4000/uploads/${producto.img_pro}`}
+  src={`https://natary-production.up.railway.app/uploads/${producto.img_pro}`}
   alt={producto.nombre_pro}
 />
 
@@ -441,7 +441,7 @@ SUSCRIBIRME
       };
 
       try {
-        const res = await fetch("http://localhost:4000/api/contacto", {
+        const res = await fetch("https://natary-production.up.railway.app/api/contacto", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

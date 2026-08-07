@@ -23,7 +23,7 @@ function Carrito() {
 };
   
 const cargarCarrito = () => {
-    axios.get("http://localhost:4000/api/carrito", {
+    axios.get("https://natary-production.up.railway.app/api/carrito", {
         headers: {
             Authorization: `Bearer ${token}`
         }
@@ -57,7 +57,7 @@ const cambiarCantidad = (producto, accion) => {
     return;
   }
 
-  axios.put("http://localhost:4000/api/carrito", {
+  axios.put("https://natary-production.up.railway.app/api/carrito", {
     cve_pro: producto.cve_pro,
     accion
   }, {
@@ -79,7 +79,7 @@ const cambiarCantidad = (producto, accion) => {
     const confirmarCompra = () => {
 
     axios.post(
-        "http://localhost:4000/api/compra",
+        "https://natary-production.up.railway.app/api/compra",
         {},
         {
             headers: {
@@ -201,7 +201,7 @@ const cambiarCantidad = (producto, accion) => {
             {/* IMAGEN IZQUIERDA */}
             <img
             loading="lazy"
-                src={"http://localhost:4000/uploads/" + p.img_pro}
+                src={"https://natary-production.up.railway.app/uploads/" + p.img_pro}
                 className="carrito-img"
                 alt={p.nombre_pro}
             />

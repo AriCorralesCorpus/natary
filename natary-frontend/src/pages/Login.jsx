@@ -12,7 +12,7 @@ function Login() {
   e.preventDefault();
 
   try {
-    const res = await fetch("http://localhost:4000/api/login", {
+    const res = await fetch("https://natary-production.up.railway.app/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

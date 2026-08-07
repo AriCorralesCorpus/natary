@@ -17,7 +17,7 @@ function MisCompras() {
   const token = localStorage.getItem("token");
 
   const cargar = () => {
-    axios.get("http://localhost:4000/api/mis-compras", {
+    axios.get("https://natary-production.up.railway.app/api/mis-compras", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -134,7 +134,7 @@ function MisCompras() {
                 <div key={i} className="d-flex justify-content-between align-items-center mb-2">
 
                   <img
-                    src={`http://localhost:4000/uploads/${p.img_pro}`}
+                    src={`https://natary-production.up.railway.app/uploads/${p.img_pro}`}
                     width="50"
                     height="50"
                     style={{ borderRadius: "8px", objectFit: "cover" }}

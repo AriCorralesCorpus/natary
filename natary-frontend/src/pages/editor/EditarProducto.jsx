@@ -24,7 +24,7 @@ function EditarProducto(){
         try{
 const token = localStorage.getItem("token");
            const respuesta = await fetch(
-    `http://localhost:4000/api/productos/${producto.cve_pro}`,
+    `https://natary-production.up.railway.app/api/productos/${producto.cve_pro}`,
     {
         method: "PUT",
         headers: {

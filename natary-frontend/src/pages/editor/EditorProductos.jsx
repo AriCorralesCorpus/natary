@@ -24,7 +24,7 @@ function EditorProductos(){
         try{
 
             const res = await fetch(
-                "http://localhost:4000/api/productos"
+                "https://natary-production.up.railway.app/api/productos"
             );
 
 
@@ -53,7 +53,7 @@ function EditorProductos(){
 const token = localStorage.getItem("token");
 
 const respuesta = await fetch(
-    `http://localhost:4000/api/productos/${productoEliminar.cve_pro}`,
+    `https://natary-production.up.railway.app/api/productos/${productoEliminar.cve_pro}`,
     {
         method: "DELETE",
         headers: {
@@ -223,7 +223,7 @@ const respuesta = await fetch(
 
                                 <img
 
-                                    src={`http://localhost:4000/uploads/${producto.img_pro}`}
+                                    src={`https://natary-production.up.railway.app/uploads/${producto.img_pro}`}
 
                                     width="80"
 
@@ -431,7 +431,7 @@ const respuesta = await fetch(
 
                                     <img
 
-                                        src={`http://localhost:4000/uploads/${productoEliminar.img_pro}`}
+                                        src={`https://natary-production.up.railway.app/uploads/${productoEliminar.img_pro}`}
 
                                         width="120"
 

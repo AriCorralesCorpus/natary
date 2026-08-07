@@ -20,7 +20,7 @@ const [correo, setCorreo] = useState("");
 
         try{
 
-            const res = await fetch("http://localhost:4000/api/registro",{
+            const res = await fetch("https://natary-production.up.railway.app/api/registro",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
