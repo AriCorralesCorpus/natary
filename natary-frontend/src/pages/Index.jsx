@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import bannerNormal from "../assets/banner.webp";
-import bannerSanValentin from "../assets/banner_san_valentin.webp";
-import bannerPrimavera from "../assets/banner_primavera.webp";
-import bannerHalloween from "../assets/banner_halloween.webp";
-import bannerNavidad from "../assets/banner_navidad.webp";
-import banner1 from "../assets/banner_principal.webp";
+import bannerNormal from "../assets/banner.avif";
+import bannerSanValentin from "../assets/banner_san_valentin.avif";
+import bannerPrimavera from "../assets/banner_primavera.avif";
+import bannerHalloween from "../assets/banner_halloween.avif";
+import bannerNavidad from "../assets/banner_navidad.avif";
+import banner1 from "../assets/banner_principal.avif";
 
 import "./Index.css";
-import logo from "../assets/logo.webp";
-import estambres from "../assets/estambres.webp";
-import agujas from "../assets/agujas.webp";
-import ganchos from "../assets/ganchos.webp";
-import accesorios from "../assets/accesorios.webp";
+import logo from "../assets/logo.avif";
+import estambres from "../assets/estambres.avif";
+import agujas from "../assets/agujas.avif";
+import ganchos from "../assets/ganchos.avif";
+import accesorios from "../assets/accesorios.avif";
 import { useState, useEffect } from "react";
 
 function Index(){

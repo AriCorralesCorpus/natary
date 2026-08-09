@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Index.css";
-import logo from "../assets/logo.webp";
+import logo from "../assets/logo.avif";
 
 function Catalogo() {
 
