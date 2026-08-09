@@ -75,7 +75,7 @@ useEffect(() => {
 
     const hoy = new Date();
 
-    const mes = 12;
+    const mes = hoy.getMonth() + 1;
     const dia = hoy.getDate();
 
     if (mes === 2 && dia <= 14) {
@@ -230,8 +230,7 @@ src={bannerEvento}
 alt="Banner del evento"
 width="1200"
 height="500"
-loading="eager"
-fetchPriority="high"
+loading="lazy"
 />
 
 <Carousel.Caption>
@@ -285,6 +284,8 @@ key={producto.cve_pro}
 
 <img
   loading="lazy"
+  width="300"
+  height="300"
   src={`https://natary-production.up.railway.app/uploads/${producto.img_pro}`}
   alt={producto.nombre_pro}
 />
