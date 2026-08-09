@@ -6,7 +6,7 @@ import bannerSanValentin from "../assets/banner_san_valentin.avif";
 import bannerPrimavera from "../assets/banner_primavera.avif";
 import bannerHalloween from "../assets/banner_halloween.avif";
 import bannerNavidad from "../assets/banner_navidad.avif";
-import banner1 from "../assets/banner_principal.avif";
+import banner1 from "../assets/banner_principal.webp";
 
 import "./Index.css";
 import logo from "../assets/logo.avif";
