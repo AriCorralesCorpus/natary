@@ -65,7 +65,8 @@ const [correo, setCorreo] = useState("");
 
 
     return(
-        <div className="login-page">
+        <div className="login-page"
+        style={{ backgroundImage: `url(${fondo})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", minHeight: "100vh", }}>
 
 
             <button
