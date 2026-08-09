@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import fondo from "../assets/fondo.avif";
 
 function Login() {
   const navigate = useNavigate();
@@ -57,7 +58,8 @@ if (data.usuario.tipo === 1) {
 
 
 return (
-  <div className="login-page">
+  <div className="login-page"
+  style={{ backgroundImage: `url(${fondo})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", minHeight: "100vh", }}>
 
      {/* BOTÓN REGRESAR */}
     <button
