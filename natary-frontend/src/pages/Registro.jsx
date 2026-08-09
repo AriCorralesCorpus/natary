@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import fondo from "../assets/fondo.avif";
 
 function Registro(){
 
