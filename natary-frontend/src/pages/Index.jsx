@@ -2,10 +2,10 @@ import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import bannerNormal from "../assets/banner.webp";
-import bannerSanValentin from "../assets/banner_san_valentin.png";
-import bannerPrimavera from "../assets/banner_primavera.png";
-import bannerHalloween from "../assets/banner_halloween.png";
-import bannerNavidad from "../assets/banner_navidad.png";
+import bannerSanValentin from "../assets/banner_san_valentin.webp";
+import bannerPrimavera from "../assets/banner_primavera.webp";
+import bannerHalloween from "../assets/banner_halloween.webp";
+import bannerNavidad from "../assets/banner_navidad.webp";
 import banner1 from "../assets/image.png";
 
 import "./Index.css";
