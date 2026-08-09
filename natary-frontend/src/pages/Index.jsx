@@ -6,7 +6,7 @@ import bannerSanValentin from "../assets/banner_san_valentin.webp";
 import bannerPrimavera from "../assets/banner_primavera.webp";
 import bannerHalloween from "../assets/banner_halloween.webp";
 import bannerNavidad from "../assets/banner_navidad.webp";
-import banner1 from "../assets/image.png";
+import banner1 from "../assets/image.webp";
 
 import "./Index.css";
 import logo from "../assets/logo.webp";
@@ -211,10 +211,11 @@ Catálogo
 <img
 className="banner-img"
 src={banner1}
-alt="Banner 1"
+alt="Figuras tejidas de crochet hechas a mano"
 width="1200"
 height="500"
 fetchPriority="high"
+decoding="async"
 />
 
 <Carousel.Caption>
@@ -286,6 +287,7 @@ key={producto.cve_pro}
   loading="lazy"
   width="300"
   height="300"
+  decoding="async"
   src={`https://natary-production.up.railway.app/uploads/${producto.img_pro}`}
   alt={producto.nombre_pro}
 />
