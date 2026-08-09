@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import bannerNormal from "../assets/banner.avif";
 import bannerSanValentin from "../assets/banner_san_valentin.avif";
 import bannerPrimavera from "../assets/banner_primavera.avif";
 import bannerHalloween from "../assets/banner_halloween.avif";
@@ -22,7 +21,7 @@ const navigate = useNavigate();
 const [productos, setProductos] = useState([]);
 const [mostrarServicios, setMostrarServicios] = useState(false);
 const [mostrarQuienes, setMostrarQuienes] = useState(false);
-const [bannerEvento, setBannerEvento] = useState(bannerNormal);
+const [bannerEvento, setBannerEvento] = useState(banner1);
 const [mensajeEvento, setMensajeEvento] = useState("Diseños Personalizados");
 const usuario = JSON.parse(localStorage.getItem("usuario"));
 
@@ -108,7 +107,7 @@ useEffect(() => {
 
     else {
 
-        setBannerEvento(bannerNormal);
+        setBannerEvento(banner1);
         setMensajeEvento("Diseños Personalizados");
 
     }
