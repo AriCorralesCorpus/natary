@@ -6,7 +6,7 @@ import bannerSanValentin from "../assets/banner_san_valentin.webp";
 import bannerPrimavera from "../assets/banner_primavera.webp";
 import bannerHalloween from "../assets/banner_halloween.webp";
 import bannerNavidad from "../assets/banner_navidad.webp";
-import banner1 from "../assets/image.webp";
+import banner1 from "../assets/banner_principal.webp";
 
 import "./Index.css";
 import logo from "../assets/logo.webp";
@@ -215,7 +215,6 @@ alt="Figuras tejidas de crochet hechas a mano"
 width="1200"
 height="500"
 fetchPriority="high"
-decoding="async"
 />
 
 <Carousel.Caption>
@@ -228,7 +227,7 @@ decoding="async"
 <img
 className="banner-img"
 src={bannerEvento}
-alt="Banner del evento"
+alt={mensajeEvento}
 width="1200"
 height="500"
 loading="lazy"
