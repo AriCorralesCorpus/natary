@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import bannerSanValentin from "../assets/banner_san_valentin.avif";
 import bannerPrimavera from "../assets/banner_primavera.avif";
+import bannerVerano from "../assets/banner_verano.avif";
 import bannerHalloween from "../assets/banner_halloween.avif";
 import bannerNavidad from "../assets/banner_navidad.avif";
 import banner1 from "../assets/banner_principal.webp";
@@ -88,6 +89,13 @@ useEffect(() => {
 
         setBannerEvento(bannerPrimavera);
         setMensajeEvento("Bienvenida Primavera");
+
+    }
+
+    else if (mes >= 6 && mes <= 8) {
+
+        setBannerEvento(bannerVerano);
+        setMensajeEvento("Bienvenido el Verano");
 
     }
 
